@@ -53,8 +53,8 @@
 
     <main>
 
-        <section class="container-fluid">
-            <div id="carouselExample" class="carousel slide container-fluid">
+        <section>
+            <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="./assets/img/carousel1.jpg" class="d-block w-100 object-fit-cover" alt="tres llamas y de fondo el salar de atacama">
@@ -77,7 +77,7 @@
             </div>
         </section>
 
-        <section class="bg-black pt-4 pb-5 d-none d-md-block">
+        <section class="bg-black pt-4 pb-5 d-none d-md-block" id="quienes-somos">
             <div class="pt-5 pb-4 text-center">
                 <h2 class="text-white text-uppercase fs-4 fuente">¿Quienes somos?</h2>
             </div>
@@ -100,7 +100,7 @@
                                 <div class="card-body bg-black">
                                     <p class="card-text text-white text-start fuente fs-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur possimus nulla natus assumenda fugit distinctio dolorem odit error? Iste, similique facere quam debitis maxime asperiores quae nobis et odit qui eligendi nisi obcaecati tempore corrupti ipsam sequi perferendis delectus quis ullam! Reiciendis quia commodi cum quis corporis corrupti quae, enim quas inventore cupiditate assumenda veniam nemo! Accusamus ad corrupti exercitationem commodi officia incidunt placeat fugit nisi numquam sit, laborum voluptate dolore veritatis, mollitia nostrum! Delectus sit debitis quia maxime rerum dolorem accusamus alias quas maiores deleniti commodi hic repudiandae cupiditate, consectetur suscipit ipsa, asperiores dolorum consequuntur fuga harum? Autem, enim!</p>
                                 </div>
-                                <div class="bg-iconos-tarjetas pb-5">
+                                <div class="bg-iconos-tarjetas">
                                     <i class="fa-solid fa-mountain text-white fs-2 p-1"></i>
                                 </div>
                             </div>
@@ -120,14 +120,14 @@
             </div>
         </section>
 
-        <section class="bg-black pt-4 pb-5">
+        <section class=" container-fluid bg-black pt-4 pb-5" id="destacados">
             <div class="pt-5 pb-4">
                 <h2 class="fuente text-uppercase fs-4 text-white text-center">destacados</h2>
             </div>
-            <div class="container text-center">
+            <div class="container text-center grid-tarjetas">
                 <div class="row">
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
+                    <div class="col-lg-3">
+                        <div class="card">
                             <div>
                                 <img src="./assets/img/card1.jpg" class="card-img-top object-fit-contain" alt="...">
                             </div>
@@ -137,17 +137,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card" style="width: 18rem;">
-                            <img src="./assets/img/card2.jpg" class="card-img-top object-fit-contain img-fluid" alt="...">
-                            <div class="card-body bg-iconos-tarjetas text-start">
+                    <div class="col-lg-3">
+                        <div class="card h-100">
+                            <img src="./assets/img/card2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body bg-iconos-tarjetas text-start d-grid object-fit-cover">
                                 <h3 class="fs-5">Lorem ipsum dolor sit amet.</h3>
                                 <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem alias in beatae unde corporis eos porro nemo maxime facilis possimus.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card object-fit-contain" style="width: 18rem;">
+                    <div class="col-lg-3">
+                        <div class="card">
                             <img src="./assets/img/card3.jpg" class="card-img-top" alt="...">
                             <div class="card-body bg-iconos-tarjetas text-start">
                                 <h3 class="fs-5">Lorem ipsum dolor sit amet.</h3>
@@ -155,8 +155,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="card object-fit-contain" style="width: 18rem;">
+                    <div class="col-lg-3">
+                        <div class="card object-fit-contain">
                             <img src="./assets/img/card4.jpg" class="card-img-top" alt="...">
                             <div class="card-body bg-iconos-tarjetas text-start">
                                 <h3 class="fs-5">Lorem ipsum dolor sit amet.</h3>
@@ -168,7 +168,44 @@
               </div>
         </section>
 
+        <section class="bg-black ps-5 pe-5 pb-5" id="contacto">
+            <div class="pt-5 pb-4">
+                <h2 class="fuente text-uppercase fs-4 text-white text-center">Contacto</h2>
+            </div>
+            <div class="ps-5 pe-5">
+                <div class="mb-3 bg-black ps-4 pe-4">
+                    <label for="formGroupExampleInput" class="form-label text-white">Nombre</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput">
+                </div>
+                <div class="mb-3 ps-4 pe-4">
+                    <label for="formGroupExampleInput2" class="form-label text-white">Asunto</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2">
+                </div>
+                <div class="mb-3 ps-4 pe-4">
+                    <label for="formGroupExampleInput2" class="form-label text-white">Mensaje</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-info ms-4">Enviar</button>
+            </div>
+        </section>
+
     </main>
+
+    <footer>
+        <div class="bg-info ps-5 pe-5 d-flex justify-content-around align-items-center">
+            <div>
+                <h2 class="text-white fuente m-3">viajes chile</h2>
+            </div>
+
+            <div class="gap-5">
+                <a href="#"><i class="fa-brands fa-square-github p-1 fs-2 text-white"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin p-1 fs-2 text-white"></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter p-1 fs-2 text-white"></i></a>
+                <a href="#"><i class="fa-brands fa-square-facebook p-1 fs-2 text-white"></i></a>
+            </div>
+        
+        </div>
+    </footer>
 
 
 
