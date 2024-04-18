@@ -10,14 +10,12 @@
     <meta name="keywords"
         content="viajes, chile, norte, sur, mar, cordillera de los andes, vacaciones, descanso, maravillas del mundo, agencia de viajes">
 
-    <script defer src="https://code.jquery.com/jquery-3.7.1.js"
-        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script defer src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/688b1bb0be.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/688b1bb0be.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <script src="./assets/js/styles.js"></script>
-
+    <script defer src="./assets/js/index.js"></script>
     <title>Viajes Chile</title>
     <link rel="shortcut icon" href="./assets/img/viajes.svg" type="image/x-icon">
 </head>
@@ -34,9 +32,9 @@
                 <div class="collapse navbar-collapse justify-content-md-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active text-white fuente" aria-current="page" href="./index.html">Inicio</a>
+                            <a class="nav-link active text-white fuente" aria-current="page" href="#arriba">Inicio</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item d-none d-md-block">
                             <a class="nav-link text-white fuente" href="#quienes-somos">Quienes Somos</a>
                         </li>
                         <li class="nav-item">
@@ -53,7 +51,7 @@
 
     <main>
 
-        <section>
+        <section id="arriba">
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -83,7 +81,7 @@
             </div>
             <div class="d-grid justify-content-md-center">
                 <div class="container-fluid text-center ps-5 pe-5">
-                    <div class="row ps-5 pe-5">
+                    <div class="row ps-lg-5 ps-md-3 pe-lg-5 pe-md-3">
                         <div class="col-4">
                             <div class="card border-black">
                                 <div class="bg-iconos-tarjetas">
@@ -125,8 +123,8 @@
                 <h2 class="fuente text-uppercase fs-4 text-white text-center">destacados</h2>
             </div>
             <div class="container text-center grid-tarjetas">
-                <div class="row">
-                    <div class="col-lg-3">
+                <div class="row row-gap-2">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="card">
                             <div>
                                 <img src="./assets/img/card1.jpg" class="card-img-top object-fit-contain" alt="...">
@@ -137,7 +135,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="card h-100">
                             <img src="./assets/img/card2.jpg" class="card-img-top" alt="...">
                             <div class="card-body bg-iconos-tarjetas text-start d-grid object-fit-cover">
@@ -146,7 +144,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="card">
                             <img src="./assets/img/card3.jpg" class="card-img-top" alt="...">
                             <div class="card-body bg-iconos-tarjetas text-start">
@@ -155,7 +153,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
                         <div class="card object-fit-contain">
                             <img src="./assets/img/card4.jpg" class="card-img-top" alt="...">
                             <div class="card-body bg-iconos-tarjetas text-start">
@@ -168,11 +166,11 @@
               </div>
         </section>
 
-        <section class="bg-black ps-5 pe-5 pb-5" id="contacto">
+        <section class="bg-black ps-lg-5 ps-md-3 pe-lg-5 pe-md-3 pb-5" id="contacto">
             <div class="pt-5 pb-4">
                 <h2 class="fuente text-uppercase fs-4 text-white text-center">Contacto</h2>
             </div>
-            <div class="ps-5 pe-5">
+            <div class="ps-lg-5 ps-md-3 ps-sm-1 pe-lg-5 pe-md-3 pe-sm-1">
                 <div class="mb-3 bg-black ps-4 pe-4">
                     <label for="formGroupExampleInput" class="form-label text-white">Nombre</label>
                     <input type="text" class="form-control" id="formGroupExampleInput">
@@ -183,25 +181,28 @@
                 </div>
                 <div class="mb-3 ps-4 pe-4">
                     <label for="formGroupExampleInput2" class="form-label text-white">Mensaje</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
                 </div>
-                <button type="submit" class="btn btn-info ms-4">Enviar</button>
+                <button type="submit" class="btn btn-secondary bg-info ms-lg-4 me-lg-4 ms-md-4 me-md-4 ms-sm-4 me-sm-4 ms-4 me-4" data-bs-toggle="tooltip" data-bs-placement="top"
+                    data-bs-custom-class="custom-tooltip" data-bs-title="Click aquí para enviar.">
+                    Enviar
+                </button>
             </div>
         </section>
 
     </main>
 
     <footer>
-        <div class="bg-info ps-5 pe-5 d-flex justify-content-around align-items-center">
+        <div class="bg-info ps-lg-5 ps-md-3 ps-sm-1 pe-lg-5 pe-md-3 pe-sm-1 d-flex justify-content-around align-items-center">
             <div>
-                <h2 class="text-white fuente m-3">viajes chile</h2>
+                <h2 class="text-white text-uppercase fuente m-3 fs-5">viajes chile</h2>
             </div>
 
             <div class="gap-5">
-                <a href="#"><i class="fa-brands fa-square-github p-1 fs-2 text-white"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin p-1 fs-2 text-white"></i></a>
-                <a href="#"><i class="fa-brands fa-square-twitter p-1 fs-2 text-white"></i></a>
-                <a href="#"><i class="fa-brands fa-square-facebook p-1 fs-2 text-white"></i></a>
+                <a href="https://www.github.com/"><i class="fa-brands fa-square-github p-1 fs-2 text-white"></i></a>
+                <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin p-1 fs-2 text-white"></i></a>
+                <a href="https://www.twitter.com"><i class="fa-brands fa-square-twitter p-1 fs-2 text-white"></i></a>
+                <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook p-1 fs-2 text-white"></i></a>
             </div>
         
         </div>

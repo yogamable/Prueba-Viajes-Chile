@@ -30,7 +30,15 @@
 
 [Iconos]("https://kit.fontawesome.com/688b1bb0be.js")
 
-    [Icono]("")
+    [Quienes somos - avion] fa-solid fa-plane
+    [Quienes somos - montaña] fa-solid fa-mountain
+    [Quienes somos - mapa] fa-solid fa-route
+    
+    
+    [Footer - Icono Github] fa-brands fa-square-github
+    [Footer - Icono Linkedin] fa-brands fa-linkedin
+    [Footer - Icono Twitter] fa-brands fa-square-twitter
+    [Footer - Icono Facebook] fa-brands fa-square-facebook
 
 [Fuentes]('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap')
     
@@ -48,15 +56,3 @@
 [Github]("https://kit.fontawesome.com/688b1bb0be.js")
     
     Cómo lo hice:
-
-
-
-
-
-
-
-
-
-
-
-
